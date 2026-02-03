@@ -1,4 +1,6 @@
-# e2e trace viewer
+# E2E Trace Viewer
+
+Upload Playwright trace files (.zip) to view detailed test execution traces including screenshots, DOM snapshots, and network requests.
 
 <https://trace.playwright.dev/>
 
