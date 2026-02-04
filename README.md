@@ -1,22 +1,40 @@
-# E2E Trace Viewer
+# Frontend
 
-Upload Playwright trace files (.zip) to view detailed test execution traces including screenshots, DOM snapshots, and network requests.
+[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+[![CI](https://github.com/MykolaVaskevych/cs4135_week2_frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/MykolaVaskevych/cs4135_week2_frontend/actions/workflows/ci.yml)
+[![Node.js](https://img.shields.io/badge/node-22-brightgreen.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/react-19-blue.svg)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/vite-7-purple.svg)](https://vite.dev/)
 
-<https://trace.playwright.dev/>
+React + Vite frontend with Playwright E2E tests.
 
-# React + Vite
+## Quick Start
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```bash
+npm install
+npm run dev
+```
 
-Currently, two official plugins are available:
+Runs on http://localhost:5173
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Scripts
 
-## React Compiler
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run test:e2e` | Run Playwright E2E tests |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Pre-commit Hooks
 
-## Expanding the ESLint configuration
+This project uses Husky + lint-staged. On commit, ESLint runs with `--fix` on staged JS/TS files.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Hooks install automatically via `npm install` (prepare script).
+
+## E2E Trace Viewer
+
+Upload Playwright trace files (.zip) to view detailed test execution traces:
+
+https://trace.playwright.dev/
